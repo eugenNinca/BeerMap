@@ -1,0 +1,32 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BeerMap</title>
+</head>
+<body>
+    {{> navbar}}
+    <!-- {{> yeild }} -->
+    <!-- {{> top }} -->
+</body>
+
+<!-- Template navbar stuff -->
+<template name="navbar">
+    <div>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a  href="/"><h4><span class="glyphicon glyphicon-home" aria-hidden="true">  BeerMap</span>  </h4></a>
+                </div>
+                <div class="collapse navbar-collapse " id="">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="drinkers"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"> Drinkers</span></a>
+                        </li>
+                        <li class="">
+                            <a href="logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"> Logout</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</template>
